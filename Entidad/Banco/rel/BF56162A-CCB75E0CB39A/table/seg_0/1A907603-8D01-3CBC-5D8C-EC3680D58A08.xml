@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1A907603-8D01-3CBC-5D8C-EC3680D58A08" name="cliente_chequera">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:19:09 UTC</createdTime>
+<generatorID>60ABB68E-DFE7-20B7-3561-CEB55286487B</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="D5CBEA5A-13E4-E0BB-A600-718927D32227">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:19:09 UTC</createdTime>
+<generatorID>065EDA88-2BDC-9CB1-08B9-F97AD7586ADA</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id1" id="DBB38224-DAEF-996E-F657-DDA4B098C329">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:19:09 UTC</createdTime>
+<generatorID>1C669F21-EF3B-3F7E-9FE4-5BAA1EC8C99D</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8FA6FA1D-B829-D1D5-F34B-3B84155AAC3F" referredColumn="BEDB36D4-D60E-6F15-0536-6C1982DD0DF4"/>
+</associations>
+</Column>
+<Column name="id2" id="D90EE279-FD8E-5DD4-0B1B-7C5715FA9413">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:19:09 UTC</createdTime>
+<generatorID>5FF5A18B-DC5C-C458-B780-39C261D1039E</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1F03DC2A-62FE-D87B-334E-6092771F4BA3" referredColumn="E0401309-6FD7-6732-B26C-0FDC4705ED01"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D8307300-E35A-42BD-AAAA-893A91CDDF4B" name="cliente_chequera_PK">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:19:09 UTC</createdTime>
+<generatorID>49121EEF-CA9E-D236-B403-C15737C0F9C9</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5CBEA5A-13E4-E0BB-A600-718927D32227"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0E3ADF6-0CB2-B553-AAA9-D4079FF3B3FE" name="cliente_chequera_Cliente_FK">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:19:09 UTC</createdTime>
+<generatorID>708D7958-6126-03EB-387F-6AD93F1F79B3</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBB38224-DAEF-996E-F657-DDA4B098C329"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="357AF556-6971-88DE-9253-CA8451BBC153" name="cliente_chequera_Chequera_FK">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:19:09 UTC</createdTime>
+<generatorID>D500E259-C791-11F7-1662-72FBF03C4799</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D90EE279-FD8E-5DD4-0B1B-7C5715FA9413"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

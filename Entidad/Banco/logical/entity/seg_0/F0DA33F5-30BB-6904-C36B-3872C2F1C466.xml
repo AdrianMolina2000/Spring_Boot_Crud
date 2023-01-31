@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F0DA33F5-30BB-6904-C36B-3872C2F1C466" name="Cuenta">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 02:22:19 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="7F4CC673-2AC8-68CF-7AF8-F92168C790AD">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 02:22:26 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo" id="D22B7D1B-DCB3-8DFD-244E-2A14327A5D12">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 02:22:29 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Total" id="C41AEFAC-978F-2B98-CB60-E0967E3D10B7">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:08:31 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Creacion" id="2EA937AF-11EA-53BE-7081-AB43048818C2">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:11:08 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C69C2A43-26BE-5121-868D-787D080B28CD" name="Cuenta PK">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:09:28 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7F4CC673-2AC8-68CF-7AF8-F92168C790AD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

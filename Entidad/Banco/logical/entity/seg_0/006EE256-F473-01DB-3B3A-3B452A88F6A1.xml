@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="006EE256-F473-01DB-3B3A-3B452A88F6A1" name="Chequera">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:09:35 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="7C37D856-1F69-0759-19AD-EFC37EA27BFC">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:09:42 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cantidad" id="9C29D7B8-C1FE-4744-65D1-F5DDFDB344C1">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:10:23 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Creacion" id="BEE8FA15-C7FC-0AEA-41E1-F85F23D74109">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:10:40 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5CAD4B3A-3BDB-F4F6-9371-EDD84D6E6F34" name="Chequera PK">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:09:51 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7C37D856-1F69-0759-19AD-EFC37EA27BFC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

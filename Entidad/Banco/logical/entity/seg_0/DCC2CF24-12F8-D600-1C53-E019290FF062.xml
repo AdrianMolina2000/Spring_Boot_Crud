@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DCC2CF24-12F8-D600-1C53-E019290FF062" name="Cliente">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 02:06:30 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="7771EAA0-793D-4665-53AD-CE6712B05931">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 02:13:08 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombres" id="1C66799D-1384-6F11-C3FE-43A65316BAE9">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 02:15:31 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Direccion" id="FEFB54C8-CE8B-DF05-ADD3-AE61DBD78AE7">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 02:21:18 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telefono" id="D54A77D5-66BA-189B-630E-39242A392564">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 02:21:54 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="36BBFC6D-4091-2AD6-9242-D574801C3FEF" name="Cliente PK">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 02:15:29 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7771EAA0-793D-4665-53AD-CE6712B05931</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

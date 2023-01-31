@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B278163A-51E6-E4C9-2487-846C54B2DBED" name="Cheque">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:19:09 UTC</createdTime>
+<generatorID>37B45804-C173-C613-01BC-C25566D4ACA3</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="47AC8B53-325C-38C2-4076-20469D5F6854">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:19:09 UTC</createdTime>
+<generatorID>7534CBEF-5E7A-289A-30A9-CC607797056B</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Lugar" id="F48618DC-C3CD-8A00-24EF-35B474C4A98A">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:19:09 UTC</createdTime>
+<generatorID>B0B682B2-1CDD-4E05-B163-A65D0808A0EF</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Canje" id="EDDE91E4-1A22-0844-AD57-A9BB23FB969B">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:19:09 UTC</createdTime>
+<generatorID>FB2F1872-B67B-6033-B236-452D65C27BE1</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Total" id="2D3C9DB9-116F-3EC8-2E7A-2A81A57C320B">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:19:09 UTC</createdTime>
+<generatorID>FFB0DB1F-826D-1A13-3DA1-DECFF2206A11</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Destinatario" id="98026663-449B-1FF7-C0F7-BDABBAED23D5">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:19:09 UTC</createdTime>
+<generatorID>9917C7CE-F0FD-0D0C-EFDF-1931852C1209</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6FE09D78-D9F5-85B7-26A1-B5A6A1ACE07B" name="Cheque_PK">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:19:09 UTC</createdTime>
+<generatorID>9A18C238-3116-B2AC-14C0-AB9CF0E6AF06</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47AC8B53-325C-38C2-4076-20469D5F6854"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

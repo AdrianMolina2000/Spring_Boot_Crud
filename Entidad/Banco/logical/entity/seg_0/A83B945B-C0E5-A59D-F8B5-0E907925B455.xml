@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A83B945B-C0E5-A59D-F8B5-0E907925B455" name="chequera_cheque">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:13:58 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="5E9D12A3-5199-7746-A354-0D78EBDCF4CC">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:14:06 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="D1CEC014-A8B2-4197-DF88-064E8079F5C3">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:18:12 UTC</createdTime>
+<generatorID>18FE33A6-6D53-C9A4-697C-0CE9E0D400B1</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<referedAttribute>7C37D856-1F69-0759-19AD-EFC37EA27BFC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="BCC9CC42-6BDF-2B22-E81A-8F2E890341A1">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:18:16 UTC</createdTime>
+<generatorID>930A45FF-C77B-2C13-E29A-3F332E495771</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<referedAttribute>7534CBEF-5E7A-289A-30A9-CC607797056B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2D546AFE-E079-CBF3-7950-2694634F4755" name="chequera_cheque PK">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 03:14:18 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5E9D12A3-5199-7746-A354-0D78EBDCF4CC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
