@@ -8,8 +8,9 @@ import lombok.Data;
 public class Cheque {
     private int id;
     private String lugar;
-    private Date fecha_Canje;
+    private Date fecha_canje;
     private double total;
     private String destinatario;
-    private boolean canjeado;
+    private char estado;
+    private int id_chequera;
 }

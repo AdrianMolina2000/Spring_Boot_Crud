@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="48EC15CC-D89E-04BF-BCB7-34D43622C9A1" name="Cliente">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 23:21:43 UTC</createdTime>
+<generatorID>DCC2CF24-12F8-D600-1C53-E019290FF062</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="6A124A16-885E-1CD0-3A05-B672E901E887">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 23:21:43 UTC</createdTime>
+<generatorID>7771EAA0-793D-4665-53AD-CE6712B05931</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombres" id="167C3047-9CB7-44E1-9234-81D9F1B66DC3">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 23:21:43 UTC</createdTime>
+<generatorID>1C66799D-1384-6F11-C3FE-43A65316BAE9</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="6B40DE70-7E11-D832-D202-E2131A30835B">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 23:21:43 UTC</createdTime>
+<generatorID>FEFB54C8-CE8B-DF05-ADD3-AE61DBD78AE7</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefono" id="7E2F422F-B043-CAD7-BA3A-0F27372405EA">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 23:21:43 UTC</createdTime>
+<generatorID>D54A77D5-66BA-189B-630E-39242A392564</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cliente" id="979B96E2-1093-105A-3943-40ED335F00AB">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 23:21:43 UTC</createdTime>
+<generatorID>8F86535F-DCB4-C43C-3E8C-219A53DD164B</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21BFA626-C57C-9E69-CBEE-12111C60B3EA" name="Cliente_PK">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 23:21:43 UTC</createdTime>
+<generatorID>36BBFC6D-4091-2AD6-9242-D574801C3FEF</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A124A16-885E-1CD0-3A05-B672E901E887"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

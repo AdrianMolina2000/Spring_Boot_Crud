@@ -58,10 +58,35 @@
 <engineerTo>
 <item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="491B8DB8-9DA7-A376-24B6-7757BBEC8125">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 17:16:33 UTC</createdTime>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="C81E7047-AA9B-A971-9575-27518B39607E">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 21:05:55 UTC</createdTime>
+<generatorID>72A61F9C-B27A-12D9-0859-1E949760DB63</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<referedAttribute>7771EAA0-793D-4665-53AD-CE6712B05931</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

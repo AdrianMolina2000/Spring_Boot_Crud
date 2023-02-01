@@ -4,31 +4,37 @@ import com.crud.banco.model.Cheque;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class ChequeRepository implements IChequeRepository{
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
+
     @Override
-    public List<Cheque> findAll() {
-        String SQL = "SELECT * FROM cheque";
+    public List<Cheque> findAll(int idChequera) {
+        String SQL = "SELECT * FROM cheque WHERE id_chequera = " + idChequera;
         return jdbcTemplate.query(SQL, BeanPropertyRowMapper.newInstance(Cheque.class));
-    }
-    @Override
-    public int save(Cheque cheque) {
-        String SQL = "INSERT INTO cheque VALUES(?,?,?,?,?,?)";
-        return jdbcTemplate.update(SQL, new Object[]{cheque.getId(), cheque.getLugar(), cheque.getFecha_Canje(), cheque.getTotal(), cheque.getDestinatario(), cheque.getTotal()});
     }
 
     @Override
-    public int update(Cheque cheque) {
-        return 0;
+    public int addCheque(Cheque cheque) {
+        String SQL = "INSERT INTO cheque (estado, id_chequera) values (1, ?)";
+        return jdbcTemplate.update(SQL, new Object[]{cheque.getId_chequera()});
+    }
+
+    @Override
+    public int canjearCheque(Cheque cheque) {
+        String SQL = "UPDATE cheque SET lugar = ? , fecha_canje = SYSDATETIME(), total = ?, destinatario = ?, estado = 2 WHERE id=?";
+        return jdbcTemplate.update(SQL, new Object[]{cheque.getLugar(), cheque.getTotal(), cheque.getDestinatario(), cheque.getId_chequera()});
     }
 
     @Override
     public int deleteById(int id) {
-        return 0;
+        String SQL = "UPDATE cheque SET estado=0 WHERE id=?";
+        return jdbcTemplate.update(SQL, new Object[]{id});
     }
 }

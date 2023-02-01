@@ -75,6 +75,20 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id1" id="74E7A0DF-AA28-FA73-0B82-2E67C280924C">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 21:05:37 UTC</createdTime>
+<generatorID>5D42DAC7-0A87-2525-B7E3-C22795C9D390</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<referedAttribute>7C37D856-1F69-0759-19AD-EFC37EA27BFC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="9A18C238-3116-B2AC-14C0-AB9CF0E6AF06" name="Cheque PK">

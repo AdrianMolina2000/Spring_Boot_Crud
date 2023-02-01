@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E8D82264-F0AB-6CDB-9778-B39A4C37E0CC" containerWithKeyObject="AF98F0F7-771A-EFF5-3EA1-CE32348780C8" localFKIndex="B19A921A-3BD3-04FE-AA2A-42B0CB7C1D3C" name="Cheque_Chequera_FK">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 23:21:43 UTC</createdTime>
+<generatorID>5D42DAC7-0A87-2525-B7E3-C22795C9D390</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<referredTableLongName>Chequera</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A9EACA7E-FB2B-2A61-ECA1-672E5802576D</referredTableID>
+<keyObject>3ADB6B24-D5DF-713A-D2AF-7F6BF34ECB6B</keyObject>
+<referredKeyID>3ADB6B24-D5DF-713A-D2AF-7F6BF34ECB6B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

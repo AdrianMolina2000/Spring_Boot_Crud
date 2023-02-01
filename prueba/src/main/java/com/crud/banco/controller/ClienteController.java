@@ -23,12 +23,12 @@ public class ClienteController {
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
-    @PostMapping("/save")
+    @PostMapping("/crearCliente")
     public ResponseEntity<ServiceResponse> save(@RequestBody Cliente cliente){
         ServiceResponse serviceResponse = new ServiceResponse();
         var result = iClienteService.save(cliente);
         if(result == 1){
-            serviceResponse.setMessage("Item saved with success");
+            serviceResponse.setMessage("Cliente creado con Exito");
         }
         return new ResponseEntity<>(serviceResponse, HttpStatus.OK);
     }
@@ -38,7 +38,7 @@ public class ClienteController {
         ServiceResponse serviceResponse = new ServiceResponse();
         var result = iClienteService.update(cliente);
         if(result == 1){
-            serviceResponse.setMessage("Item update with success");
+            serviceResponse.setMessage("Cliente actualizado con exito");
         }
         return new ResponseEntity<>(serviceResponse, HttpStatus.OK);
     }
@@ -48,7 +48,7 @@ public class ClienteController {
         ServiceResponse serviceResponse = new ServiceResponse();
         var result = iClienteService.deleteById(id);
         if(result == 1){
-            serviceResponse.setMessage("Item delete with success");
+            serviceResponse.setMessage("Cliente eliminado con exito");
         }
         return new ResponseEntity<>(serviceResponse, HttpStatus.OK);
     }

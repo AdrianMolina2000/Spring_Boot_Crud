@@ -51,6 +51,20 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id1" id="928EEAC3-5220-D9AF-73A2-E5F3D64E01EF">
+<createdBy>adria</createdBy>
+<createdTime>2023-01-31 21:05:48 UTC</createdTime>
+<generatorID>DEE5FF62-56C7-0CE1-0460-37F16BBE600F</generatorID>
+<ownerDesignName>Banco</ownerDesignName>
+<engineerTo>
+<item key="BF56162A-77C3-AAE6-914A-CCB75E0CB39A" value="true"/>
+</engineerTo>
+<referedAttribute>7771EAA0-793D-4665-53AD-CE6712B05931</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="5CAD4B3A-3BDB-F4F6-9371-EDD84D6E6F34" name="Chequera PK">
