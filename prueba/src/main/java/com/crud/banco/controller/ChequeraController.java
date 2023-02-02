@@ -28,7 +28,7 @@ public class ChequeraController {
         ServiceResponse serviceResponse = new ServiceResponse();
         var result = iChequeraService.addChequera(chequera);
         if(result == 1){
-            serviceResponse.setMessage("Cuenta creada con exito");
+            serviceResponse.setMessage("Chequera creada con exito");
         }
         return new ResponseEntity<>(serviceResponse, HttpStatus.OK);
     }
@@ -38,7 +38,7 @@ public class ChequeraController {
         ServiceResponse serviceResponse = new ServiceResponse();
         var result = iChequeraService.deleteById(id);
         if(result == 1){
-            serviceResponse.setMessage("Cuenta eliminada con exito");
+            serviceResponse.setMessage("Chequera eliminada con exito");
         }
         return new ResponseEntity<>(serviceResponse, HttpStatus.OK);
     }

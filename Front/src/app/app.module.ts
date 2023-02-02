@@ -9,13 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CuentasComponent } from './components/cuentas/cuentas.component';
 import { ChequerasComponent } from './components/chequeras/chequeras.component';
+import { ChequeComponent } from './components/cheque/cheque.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsuarioComponent,
     CuentasComponent,
-    ChequerasComponent
+    ChequerasComponent,
+    ChequeComponent
   ],
   imports: [
     BrowserModule,

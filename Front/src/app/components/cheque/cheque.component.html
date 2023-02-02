@@ -1,0 +1,119 @@
+<hr />
+<table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col" class="text-center">ID</th>
+      <th scope="col" class="text-center">Lugar</th>
+      <th scope="col" class="text-center">Fecha_Canje</th>
+      <th scope="col" class="text-center">Total</th>
+      <th scope="col" class="text-center">Destinatario</th>
+      <th scope="col" class="text-center">Estado</th>
+      <th scope="col" class="text-center">Eliminar/Canjear</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of listCheque">
+      <th class="text-center">{{ item.id }}</th>
+      <td class="text-center">{{ item.lugar }}</td>
+      <td class="text-center">{{ item.fecha_canje | date:'dd-MM-yyyy' }}
+      <td class="text-center">{{ item.total }}</td>
+      <td class="text-center">{{ item.destinatario }}</td>
+      <td *ngIf="item.estado == '0'" class="text-center">eliminado</td>
+      <td *ngIf="item.estado == '1'" class="text-center">disponible</td>
+      <td *ngIf="item.estado == '2'" class="text-center">canjeado</td>
+      <td class="text-center">
+        <button
+          *ngIf="item.estado == '1'"
+          type="button"
+          class="btn border-danger text-white"
+          style="margin-right: 4px"
+          (click)="delete(item.id)"
+        >
+          <i class="fa fa-trash"></i>
+        </button>
+
+        <button
+          *ngIf="item.estado == '1'"
+          type="button"
+          class="btn border-primary text-white"
+          data-toggle="modal"
+          data-target="#canjearChequeModal"
+          style="margin-right: 4px"
+        >
+          <i class="fa fa-check" aria-hidden="true"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div
+  class="modal fade"
+  id="canjearChequeModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Canjear cheque</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+          (click)="newCheque()"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formCheque">
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Lugar</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" formControlName="lugar" />
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Total</label>
+            <div class="col-sm-9">
+              <input
+                type="number"
+                class="form-control"
+                formControlName="total"
+              />
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label class="col-sm-3 col-form-label">Destinatario</label>
+            <div class="col-sm-9">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="destinatario"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal"
+          (click)="newCheque()"
+        >
+          Close
+        </button>
+        <button type="button" class="btn border border-dark" (click)="save()">
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
